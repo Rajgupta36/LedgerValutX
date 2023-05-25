@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Post | Legder vaultX |financial </title>
+</head>
+
+<body>
+    <header class="main blog top">
+        <div class="navbar" id="navbar">
+            <h1 class="logo">
+                <span class="text-primary"> <i class="fas fa-book-open"></i>
+                    Ledger </span> vaultX
+            </h1>
+            </h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html"> Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html"> About</a>
+                    </li>
+                    <li>
+                        <a href="cases.html">Cases</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="content">
+            <h1>
+                Blog
+            </h1>
+
+        </div>
+
+    </header>
+    <div id="post" class="post">
+        <h2>Blog post one </h1>
+        <p class="meta">
+            <i class="fas fa-user"></i> Posted by <strong>
+                Alexa martin
+            </strong> | April 19 , 2023
+        </p>
+        <img src="./image_resources/blog/blog1.jpg" alt="">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia sit non consectetur
+            voluptatibus maiores ipsam alias esse sequi, incidunt accusamus velit suscipit enim in
+            eveniet
+            omnis nam itaque aliquam fugit.</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente sit ipsum dolores nobis minus illum! Voluptate facilis, sint ratione enim doloribus voluptatem recusandae neque illum esse, aspernatur amet modi quaerat voluptatibus repellendus animi asperiores. Modi quam nulla hic. Quae, voluptatum labore sint, ut, ipsum aperiam id impedit saepe nulla voluptates numquam officia est! At laudantium laborum nihil necessitatibus quisquam doloremque.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consequatur hic veritatis placeat consectetur, dolor maiores ducimus ut totam ea nulla amet temporibus architecto fugit? Eveniet ut quod fugit quibusdam!</p>
+    </div>
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"> <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="#"> <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="#"> <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+            <a href="#"> <i class="fab fa-youtube fa-2x"></i>
+            </a>
+        </div>
+
+        <p> Copyright &copy; 2022 -Ledger vaultX</p>
+
+
+    </footer>
+    <script>
+           const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function(){
+        if(window.pageYOffset > 100){
+            navbar.classList.remove('top');
+            if(!scrolled){
+                navbar.style.transform = ' translateY(-80px)';
+            }
+            setTimeout(function(){
+                navbar.style.transform = ' translateY(0px)';
+                scrolled = true ;
+            },200 )
+            
+        }
+    
+        else{
+            navbar.classList.add('top');
+            scrolled = false;
+        }
+
+    }
+    </script>
+</body>
+
+</html>
